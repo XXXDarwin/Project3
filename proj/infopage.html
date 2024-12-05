@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СМИОР "Нетология"</title>
+    <link rel="stylesheet" href="./styles/infostyle.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./styles/full_logo.png" alt="Логотип">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./newspage.html">Курсы</a></li>
+                <li><a href="./mainpage.html">Главная</a></li>
+                <li><a href="./edupage.html" >Обучение</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" data-page="page1" class="page-link">О Курсе</a></li>
+                <li><a href="#" data-page="page2" class="page-link">О Нетологии</a></li>
+                <li><a href="#" data-page="page3" class="page-link">Страница 3</a></li>
+                <li><a href="#" data-page="page4" class="page-link">Страница 4</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="page1" class="page">
+                <h2>О Курсе</h2>
+                <p>Содержимое страницы 1.</p>
+            </div>
+            <div id="page2" class="page">
+                <h2>Страница 2</h2>
+                <p>Содержимое страницы 2.</p>
+            </div>
+            <div id="page3" class="page">
+                <h2>Страница 3</h2>
+                <p>Содержимое страницы 3.</p>
+            </div>
+            <div id="page4" class="page">
+                <h2>Страница 4</h2>
+                <p>Содержимое страницы 4.</p>
+            </div>
+            <div class="navigation">
+                <button id="prevButton" class="nav-button"></button>
+                <button id="nextButton" class="nav-button"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>ЮФУ, ИКТИБ, 2024</p>
+    </footer>
+
+    <script src="./scripts/script1.js"></script>
+
+</body>
+</html>

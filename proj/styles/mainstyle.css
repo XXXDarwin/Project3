@@ -1,0 +1,424 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+header {
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    top: 0;
+    z-index: 1000;
+    background-color: #1c58ff;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #2a57d6;
+}
+
+.nav-list li a.active {
+    background-color: #2a57d6;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Убираем цвет, наследуем цвет от родительского элемента */
+}
+
+
+
+.linka {
+    color: black;
+    background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.linka:hover {
+    --d: 100%;
+}
+
+
+
+
+.courses-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.courses-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.course-item {
+    flex: 0 0 25%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+}
+
+.course-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    max-height: 200px;
+}
+
+.course-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.course-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+.partners-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.partners-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.partners-item {
+    flex: 0 0 25%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.partners-item:hover {
+    transform: scale(1.05);
+}
+
+
+.partner img{
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+
+.blockleft{
+    width: 50%;
+    position: left;
+}
+
+.blockright{
+    width: 50%;
+    position: right;
+}
+
+
+.doubleblock {
+    background-color: rgb(233, 233, 233);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+    justify-items: center; /* Выравнивает элементы по центру */
+    align-items: center; /* Выравнивает элементы по вертикали по центру */
+    width: 100%;
+    height: 100%;
+}
+  
+.unitblock {
+    height: 500px;
+    width: 100%; /* Можно настроить ширину по вашему усмотрению */
+}
+
+.blockhide1{
+    width: 50%;
+    visibility: hidden;
+}
+
+
+.checkbox {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 1.7s ease;
+  }
+  
+  .checkbox.checked {
+    background-color: #4CAF50; /* Зеленый цвет */
+  }
+  
+  .checkmark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.7s ease;
+  }
+  
+  .checkbox.checked .checkmark {
+    opacity: 1;
+  }
+  
+  .checkmark::before,
+  .checkmark::after {
+    content: '';
+    position: absolute;
+    background-color: #fff; /* Белый цвет галочки */
+    transition: transform 1.7s ease;
+  }
+  
+  .checkmark::before {
+    width: 5px;
+    height: 18px;
+    top: 20px;
+    left: 13px;
+    transform: rotate(-45deg) scaleY(0);
+  }
+  
+  .checkmark::after {
+    width: 5px;
+    height: 35px;
+    top: 8px;
+    left: 30px;
+    transform: rotate(45deg) scaleY(0);
+  }
+  
+  .checkbox.checked .checkmark::before {
+    transform: rotate(-45deg) scaleY(1);
+  }
+  
+  .checkbox.checked .checkmark::after {
+    transform: rotate(45deg) scaleY(1);
+  }
+
+
+  .slideright {
+    animation: my_animation 1s forwards;
+}
+
+.slideleft {
+    animation: my_animation2 1s forwards;
+}
+  
+.slideright {
+    position: relative;
+    animation: my_animation 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes my_animation {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.slideleft {
+    position: relative;
+    animation: my_animation2 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes my_animation2 {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3168fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2a57d6;
+}
+
+.advantages-list, .testimonials-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantage-item, .testimonial-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.advantage-item img, .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.advantage-item h3, .testimonial-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.advantage-item p, .testimonial-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #3168fc;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
