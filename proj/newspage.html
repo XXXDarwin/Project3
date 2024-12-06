@@ -27,76 +27,126 @@
         <div class="container" >
           <div class="content" >
             <section class="block featured-article">
-              <img src="./styles/obrazovanie.webp" alt="Основная статья" class="featured-image" style="height: 125px; width: auto;">
+              <img src="./styles/obrazovanie.webp" alt="" class="featured-image" style="height: 125px; width: auto;">
               <div class="featured-content">
                 <h2>Курсы Нетологии</h2>
-                <p>В данном разделе будут рассмотрены курсы Нетологии: направления обучения, их содержание, стоимость и отзывы</p>
+                <p>В данном разделе будут рассмотрены курсы Нетологии: направления обучения, стоимость и популярность</p>
               </div>
             </section>
       
             <section class="block articles">
               <div class="article">
-                <img src="article1.jpg" alt="Статья 1" class="article-image">
-                <h3>Заголовок статьи 1</h3>
-                <p>Краткое описание первой статьи.</p>
-                <a href="#" class="link">Читать далее</a>
+                <img src="./styles/konsultant.svg" alt="" class="article-image" style="height: 500px; width: auto;">
+                <h3>Карьерная консультация</h3>
+                <p>
+                  Если сомневаетесь и хотите индивидуально разобрать ваши карьерные желания <p></p>
+                  Как тест на профориентацию, только с живым человеком <p></p>
+                  Получите персональные рекомендации от карьерных консультантов Нетологии с опорой на ваши ценности, опыт и предпочтения.</p>
+                <button class="linka"><a href="https://netology.ru/digital_proforientation#/">Подронее</a></button>
               </div>
             </section>
 
-            <section class="block" style="background-color: rgb(245, 245, 245);">
-              <table id="field" align="center" >
-                <tr>
-                  <td class="centered">
-                    <h3>Программирование</h3>
-                    <h4>41 курс</h4> 
-                    <button>Перейти</button>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </table>
-            </section>
 
-            <section class="block articles">
+
+
+
+            <section class="block articles" style="height: auto;">
+                <h1 style="font-size: 30px;">Информация по курсам</h1>
               <div class="card-container">
-                <div class="card">
-                  <img src="python-image.jpg" alt="Python-разработчик" class="card-image">
-                  <div class="card-content">
-                    <p class="card-title">Python-разработчик</p>
-                    <p class="card-duration">10 месяцев • с трудоустройством</p>
+                  <div id="sort-buttons" class="sortbuttons" >
+                    <button data-sort="popularity">По популярности</button>
+                    <button data-sort="price">По цене</button>
+                    <button data-sort="duration">По длительности</button>
                   </div>
-                </div>
-                <div class="card">
-                  <img src="accountant-image.jpg" alt="Бухгалтер" class="card-image">
-                  <div class="card-content">
-                    <p class="card-title">Бухгалтер</p>
-                    <p class="card-duration">6 месяцев • с трудоустройством</p>
+
+                  <div class="blocks">
+                      
+                      
+                      <div class="datablock" data-popularity="250" data-price="109" data-duration="12">
+                          <div class="card">
+                              <img src="python-image.jpg" alt="" class="card-image">
+                              <div class="card-content">
+                                  <p class="card-title">Fullstack-разработчик</p>
+                                  <p class="card-duration">12 месяцев </p>
+                                  <p>109.000 Рублей</p>
+                                  <p>Купили 250 раз</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="datablock" data-popularity="150" data-price="129" data-duration="11">
+                          <div class="card">
+                              <img src="python-image.jpg" alt="" class="card-image">
+                              <div class="card-content">
+                                  <p class="card-title">IOS-разработчик</p>
+                                  <p class="card-duration">11 месяцев </p>
+                                  <p>129.000 Рублей</p>
+                                  <p>Купили 150 раз</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="datablock" data-popularity="1000" data-price="99" data-duration="10">
+                          <div class="card">
+                              <img src="python-image.jpg" alt="" class="card-image">
+                              <div class="card-content">
+                                  <p class="card-title">Python-разработчик</p>
+                                  <p class="card-duration">10 месяцев </p>
+                                  <p>99.000 Рублей</p>
+                                  <p>Купили 1000 раз</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="datablock" data-popularity="500" data-price="49" data-duration="6">
+                          <div class="card">
+                              <img src="python-image.jpg" alt="" class="card-image">
+                              <div class="card-content">
+                                  <p class="card-title">Дизайнер</p>
+                                  <p class="card-duration">6 месяцев</p>
+                                  <p>49.000 Рублей</p>
+                                  <p>Купили 500 раз</p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="datablock" data-popularity="500" data-price="49" data-duration="6">
+                          <div class="card">
+                              <img src="python-image.jpg" alt="" class="card-image">
+                              <div class="card-content">
+                                  <p class="card-title">QA-Инженер</p>
+                                  <p class="card-duration">8 месяцев</p>
+                                  <p>79.000 Рублей</p>
+                                  <p>Купили 450 раз</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </section>
+          </section>
+
+
+
+          
           </div>
         </div>
       </main>
 
 
+
+
+
+
+      
+            
+
+       
+
+
     <footer>
         <p>ЮФУ</p>
     </footer>
+
+    <script src="./scripts/script4_sort.js"></script>
 </body>
 </html>

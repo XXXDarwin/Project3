@@ -112,32 +112,74 @@ nav {
 
 
 
-#field tr{
-    background-color: white;
+
+
+
+
+
+
+a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Убираем цвет, наследуем цвет от родительского элемента */
 }
 
-#field td{
-    width: 600px;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 15px;
-    text-align: center;
-    vertical-align: middle;
+
+.linka {
+  color: black;
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px no-repeat;
+  transition: 0.5s;
+  font-size: 20px;
 }
 
-.centered {
-    text-align: center;
-    vertical-align: middle;
+.linka:hover {
+  --d: 100%;
 }
 
-#field td button{
-    width: 100px;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 15px;
-    text-align: center;
+
+.testimonials-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.testimonial-item {
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+.article button{
+  height: 50px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1c58ff;
+}
+
+.sortbuttons button{
+  height: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #1c58ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 карточки в строке */
+    gap: 20px; /* Расстояние между карточками */
+    margin: 0 auto; /* Центрируем блоки */
+  }
 
 
 
